@@ -26,11 +26,11 @@ frontend:
       commands:
         - npm run build
   artifacts:
+    baseDirectory: /
     files:
-        - location
-        - location
+        - '**/*'
     discard-paths: yes
-    baseDirectory: location
+    
   cache:
     paths:
         - path

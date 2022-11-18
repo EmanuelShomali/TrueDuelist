@@ -26,30 +26,11 @@ frontend:
       commands:
         - npm run build
   artifacts:
-    baseDirectory: /
+    baseDirectory: build
     files:
         - '**/*'
     discard-paths: yes
-    
+
   cache:
     paths:
-        - path
-        - path
-
-test:
-  phases:
-    preTest:
-      commands:
-        #- *enter command*
-    test:
-      commands:
-        #- *enter command*
-    postTest:
-      commands:
-        #- *enter command*
-  artifacts:
-    files:
-        - location
-        - location
-    configFilePath: *location*
-    baseDirectory: *location*
+        - node_modules/**/*

@@ -1,9 +1,5 @@
 version: 1
 
-env:
-  variables:
-    key: value
-
 backend:
   phases:
     preBuild:
@@ -24,7 +20,7 @@ frontend:
         - npm ci
     build:
       commands:
-        - npm run-script build
+        - npm run build
   artifacts:
     baseDirectory: build
     files:
@@ -32,3 +28,4 @@ frontend:
   cache:
     paths:
         - node_modules/**/*
+        

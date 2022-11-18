@@ -8,6 +8,7 @@ backend:
     build:
       commands:
         #- *enter command*
+        - amplifyPush --simple
     postBuild:
         commands:
         #- *enter command*

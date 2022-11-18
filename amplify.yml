@@ -16,12 +16,16 @@ frontend:
   phases:
     preBuild:
       commands:
+        # In order for this .yml file to work properly, 
+        # you have to be in the directory that features React's .json file(s);
+        # Therefore I cd into aws_react
         - cd aws_react
         - npm ci
     build:
       commands:
         - npm run build
   artifacts:
+    # I put the full path of the build file because of the above cd command.
     baseDirectory: aws_react/build
     files:
         - '**/*'

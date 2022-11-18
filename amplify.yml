@@ -17,22 +17,18 @@ backend:
         #- *enter command*
 
 frontend:
-  
   phases:
     preBuild:
       commands:
-        #- cd aws_react
+        - cd aws_react
         - npm ci
     build:
       commands:
         - npm run-script build
-  
   artifacts:
     baseDirectory: build
     files:
         - '**/*'
-    discard-paths: yes
-
   cache:
     paths:
         - node_modules/**/*

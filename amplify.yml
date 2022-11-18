@@ -8,13 +8,13 @@ backend:
   phases:
     preBuild:
       commands:
-        - *enter command*
+        #- *enter command*
     build:
       commands:
-        - *enter command*
+        #- *enter command*
     postBuild:
         commands:
-        - *enter command*
+        #- *enter command*
 
 frontend:
   phases:
@@ -40,13 +40,13 @@ test:
   phases:
     preTest:
       commands:
-        - *enter command*
+        #- *enter command*
     test:
       commands:
-        - *enter command*
+        #- *enter command*
     postTest:
       commands:
-        - *enter command*
+        #- *enter command*
   artifacts:
     files:
         - location

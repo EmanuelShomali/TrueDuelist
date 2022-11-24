@@ -1,0 +1,61 @@
+{
+  "identityPoolName": "trueduelist2035557a_identitypool_2035557a",
+  "allowUnauthenticatedIdentities": false,
+  "resourceNameTruncated": "truedu2035557a",
+  "userPoolName": "trueduelist2035557a_userpool_2035557a",
+  "autoVerifiedAttributes": [
+    "email"
+  ],
+  "mfaConfiguration": "OFF",
+  "mfaTypes": [
+    "SMS Text Message"
+  ],
+  "smsAuthenticationMessage": "Your authentication code is {####}",
+  "smsVerificationMessage": "Your verification code is {####}",
+  "emailVerificationSubject": "Your verification code",
+  "emailVerificationMessage": "Your verification code is {####}",
+  "defaultPasswordPolicy": false,
+  "passwordPolicyMinLength": 8,
+  "passwordPolicyCharacters": [],
+  "requiredAttributes": [
+    "email"
+  ],
+  "aliasAttributes": [],
+  "userpoolClientGenerateSecret": false,
+  "userpoolClientRefreshTokenValidity": 30,
+  "userpoolClientWriteAttributes": [
+    "email"
+  ],
+  "userpoolClientReadAttributes": [
+    "email"
+  ],
+  "userpoolClientLambdaRole": "truedu2035557a_userpoolclient_lambda_role",
+  "userpoolClientSetAttributes": false,
+  "sharedId": "2035557a",
+  "resourceName": "trueduelist2035557a",
+  "authSelections": "identityPoolAndUserPool",
+  "useDefault": "defaultSocial",
+  "hostedUI": true,
+  "hostedUIDomainName": "",
+  "authProvidersUserPool": [],
+  "hostedUIProviderMeta": "[]",
+  "oAuthMetadata": "{\"AllowedOAuthFlows\":[\"code\"],\"AllowedOAuthScopes\":[\"phone\",\"email\",\"openid\",\"profile\",\"aws.cognito.signin.user.admin\"],\"CallbackURLs\":[\"trueduelist://signin/\"],\"LogoutURLs\":[\"trueduelist://signout/\"]}",
+  "userPoolGroupList": [],
+  "serviceName": "Cognito",
+  "usernameCaseSensitive": false,
+  "useEnabledMfas": true,
+  "authRoleArn": {
+    "Fn::GetAtt": [
+      "AuthRole",
+      "Arn"
+    ]
+  },
+  "unauthRoleArn": {
+    "Fn::GetAtt": [
+      "UnauthRole",
+      "Arn"
+    ]
+  },
+  "breakCircularDependency": true,
+  "dependsOn": []
+}
